@@ -1,0 +1,7 @@
+:host {
+    p {
+        font-size: 70px;
+        text-align: center;
+        color: var(--fourth-color);
+    }
+}
