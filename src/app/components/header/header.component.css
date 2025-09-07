@@ -1,0 +1,22 @@
+:host {
+    .header-container {
+        width: 100%;
+        border-bottom: 1px solid;
+        border-color: var(--fourth-color-10);
+        padding: 16px 42px;
+        background-color: var(--secondary-color);
+        position: fixed;
+    }
+
+    .header-right {
+        width: fit-content;
+        height: 100%;
+    }
+
+    .header-title {
+        font-size: 24px;
+        color: var(--third-color);
+        position: relative;
+        top: 4px;
+    }
+}

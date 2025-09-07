@@ -1,31 +1,39 @@
+:root {
+  --primary-color: #212121;
+  --secondary-color: #3B3B3B;
+  --third-color: #A9F0B4;
+  --fourth-color: #FFF;
+  --fourth-color-10: #ffffff13;
+}
+
 .primary-color {
-    color: #212121;
+  color: var(--primary-color);
 }
 
 .primary-bg-color {
-    background-color: #212121;
+  background-color: var(--primary-color);
 }
 
 .secondary-color {
-    color: #3B3B3B;
+  color: var(--secondary-color);
 }
 
 .secondary-bg-color {
-    background-color: #3B3B3B;
+  background-color: var(--secondary-color);
 }
 
 .third-color {
-    color: #A9F0B4;
+  color: var(--third-color);
 }
 
 .third-bg-color {
-    background-color: #A9F0B4;
+  background-color: var(--third-color);
 }
 
 .fourth-color {
-    color: #FFF;
+  color: var(--fourth-color);
 }
 
 .fourth-bg-color {
-    background-color: #FFF;
+  background-color: var(--fourth-color);
 }
