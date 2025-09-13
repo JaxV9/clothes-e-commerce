@@ -1,0 +1,7 @@
+<div class="container margin-lr-a">
+    @for (clothe of clothes(); track clothe) {
+    <div class="card">
+        <img [src]="clothe.images[0]" />
+    </div>
+    }
+</div>

@@ -32,6 +32,11 @@ body {
     margin-left: auto;
 }
 
+.margin-lr-a {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .is-block {
     display: block;
 }
@@ -41,9 +46,17 @@ body {
     flex-direction: row;
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
+
 .flex-column {
     display: flex;
     flex-direction: column;
+}
+
+.is-grid {
+    display: grid;
 }
 
 .gap-8 {
@@ -72,6 +85,10 @@ body {
         'wght' 400,
         'GRAD' 0,
         'opsz' 24
+}
+
+.w-fit {
+    width: fit-content;
 }
 
 html,

@@ -12,14 +12,21 @@ export class ClothesService {
   quickHttp = new QuickHttp(this.baseUrl, this.headers, 'omit');
 
   async loadClothes() {
-    const response: ResAction = await this.quickHttp.get('api/v1/products');
+    const response: ResAction = await this.quickHttp.get(
+      'api/v1/products/?categorySlug=clothes'
+    );
     const payload = response.payload as Clothe[];
-    this.storeService.addItemToStore('clothes', payload);
+    const result = Array.from({ length: 12 }, (_, index) => ({
+      ...payload[4],
+      id: index,
+    }));
+    console.log(result);
+    this.storeService.addItemToStore('clothes', result);
   }
 
-  async getClothes() {
-    const store = this.storeService.store()['clothes'];
-    console.log(store);
+  getClothes(): Clothe[] {
+    const clothes = this.storeService.store()['clothes'] as Clothe[];
+    return clothes;
   }
 
   constructor(private readonly storeService: StoreService) {}
