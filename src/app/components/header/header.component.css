@@ -6,6 +6,7 @@
         padding: 16px 42px;
         background-color: var(--secondary-color);
         position: fixed;
+        z-index: 10;
     }
 
     .header-right {
