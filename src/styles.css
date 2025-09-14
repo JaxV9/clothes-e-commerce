@@ -143,3 +143,7 @@ a {
 .radius-24 {
     border-radius: 24px;
 }
+
+.txt-center {
+    text-align: center;
+}

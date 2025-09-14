@@ -1,9 +1,9 @@
 <div class="container flex-column margin-lr-a gap-16">
     <app-button-link [text]="'See all'" />
-    <div class="clothes-container w-full">
+    <div class="clothes-container flex-row w-full">
         @for (clothe of clothes(); track clothe) {
-        <div class="card">
-            <img class="is-block" [src]="'/clothes/sneakers-1/sneakers1.png'" />
+        <div class="card is-pointer">
+            <img class="is-block radius-4" [src]="'/clothes/sneakers-1/sneakers1PNJ1.png'" />
         </div>
         }
     </div>

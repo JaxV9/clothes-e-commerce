@@ -13,7 +13,7 @@ export class ClothesCardListPreviewComponent {
   clothes = signal<Clothe[]>([]);
   constructor(private readonly clothesService: ClothesService) {
     effect(() => {
-      const clothes = this.clothesService.getClothes().splice(0, 5);
+      const clothes = this.clothesService.getClothes()?.splice(0, 5);
       if (clothes) {
         this.clothes.set(clothes);
       }
