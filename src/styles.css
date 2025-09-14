@@ -91,6 +91,14 @@ body {
     width: fit-content;
 }
 
+.w-full {
+    width: 100%;
+}
+
+.is-pointer {
+    cursor: pointer;
+}
+
 html,
 body {
     height: 100%;
@@ -105,4 +113,33 @@ mat-icon {
     display: block !important;
     color: var(--third-color) !important;
     cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.radius-2 {
+    border-radius: 2px;
+}
+
+.radius-4 {
+    border-radius: 4px;
+}
+
+.radius-8 {
+    border-radius: 8px;
+}
+
+.radius-12 {
+    border-radius: 12px;
+}
+
+.radius-16 {
+    border-radius: 16px;
+}
+
+.radius-24 {
+    border-radius: 24px;
 }

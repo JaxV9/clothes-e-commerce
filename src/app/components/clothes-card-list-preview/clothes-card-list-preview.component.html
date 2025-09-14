@@ -1,1 +1,10 @@
-<p>clothes-card-list-preview works!</p>
+<div class="container flex-column margin-lr-a gap-16">
+    <app-button-link [text]="'See all'" />
+    <div class="clothes-container w-full">
+        @for (clothe of clothes(); track clothe) {
+        <div class="card">
+            <img class="is-block" [src]="'/clothes/sneakers-1/sneakers1.png'" />
+        </div>
+        }
+    </div>
+</div>

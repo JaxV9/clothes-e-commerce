@@ -1,0 +1,13 @@
+    button {
+        font-size: 24px;
+        margin-left: auto;
+        background-color: rgba(186, 138, 138, 0);
+        color: var(--fourth-color);
+        padding: 8px;
+        border: none;
+    }
+
+    button:hover {
+        background-color: var(--third-color);
+        color: var(--secondary-color);
+    }
