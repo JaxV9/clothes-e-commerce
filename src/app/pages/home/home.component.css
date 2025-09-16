@@ -1,12 +1,24 @@
 :host {
-    
-    p {
-        font-size: 70px;
-        text-align: center;
-        color: var(--fourth-color);
-    }
 
     .home-container {
         padding: 50px 0;
+    }
+
+    .promotion-container {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .promotion-banner-content {
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 16px;
+    }
+
+    .promotion-banner-content > p {
+        text-align: start;
+        font-size: 64px;
+        margin: 0;
     }
 }

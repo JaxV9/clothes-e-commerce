@@ -11,4 +11,5 @@ import { RouterLink } from '@angular/router';
 export class ButtonLinkComponent {
   text = input<string>();
   path = input<string>('');
+  isMain = input<boolean>(false);
 }

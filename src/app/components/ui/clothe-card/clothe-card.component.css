@@ -1,0 +1,21 @@
+:host {
+    .card {
+        width: 100%;
+        height: 100%;
+        transition: all ease 0.2s;
+    }
+
+    .card>img {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 2 / 3;
+        object-fit: cover;
+        object-position: center;
+        transition: all ease 0.2s;
+    }
+
+    .card:hover > img {
+        scale: 0.98;
+    }
+
+}

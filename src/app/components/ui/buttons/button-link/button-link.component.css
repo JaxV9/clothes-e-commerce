@@ -1,6 +1,6 @@
+:host {
     button {
         font-size: 24px;
-        margin-left: auto;
         background-color: rgba(186, 138, 138, 0);
         color: var(--fourth-color);
         padding: 8px;
@@ -11,3 +11,17 @@
         background-color: var(--third-color);
         color: var(--secondary-color);
     }
+
+    .main {
+        font-size: 32px;
+        background-color: rgba(186, 138, 138, 0);
+        color: var(--fourth-color);
+        padding: 8px 16px;
+        border: 1px var(--fourth-color) solid;
+    }
+
+    .main:hover {
+        border: none;
+        padding: 9px 17px;
+    }
+}

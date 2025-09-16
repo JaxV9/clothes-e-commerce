@@ -1,6 +1,6 @@
 :host {
     .hero {
-        height: calc(95vh - 60px);
+        height: calc(100vh - 60px);
         width: 100%;
         background-image: url('../../../assets/clothes/hero.png');
         background-size: cover;
