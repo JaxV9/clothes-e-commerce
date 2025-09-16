@@ -1,9 +1,5 @@
 :host {
 
-    .container {
-        width: 98%;
-    }
-
     .clothes-container {
         overflow: visible;
         gap: 8px;

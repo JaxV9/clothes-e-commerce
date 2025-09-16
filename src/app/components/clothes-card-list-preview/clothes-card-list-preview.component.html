@@ -1,5 +1,5 @@
 <div class="container flex-column margin-lr-a gap-16">
-    <app-button-link class="margin-l-a" [text]="'Show all'" />
+    <app-button class="margin-l-a" [text]="'Show all'" [isLink]="true" />
     <div class="clothes-container flex-row w-full">
         @for (clothe of clothes(); track clothe) {
         <app-clothe-card [title]="clothe.title" [subTitle]="'Subtitle'" [price]="'70$'"

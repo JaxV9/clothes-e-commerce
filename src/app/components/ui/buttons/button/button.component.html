@@ -1,0 +1,23 @@
+@if (isLink()) {
+   <a [routerLink]="path()">
+    @if (isMain()) {
+    <button class="main is-block is-pointer radius-4">
+        {{text()}}
+    </button>
+    } @else {
+    <button class="is-block is-pointer radius-4">
+        {{text()}}
+    </button>
+    }
+</a> 
+} @else {
+    @if (isMain()) {
+    <button class="main is-block is-pointer radius-4">
+        {{text()}}
+    </button>
+    } @else {
+    <button class="is-block is-pointer radius-4">
+        {{text()}}
+    </button>
+    }
+}

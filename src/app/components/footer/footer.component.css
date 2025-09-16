@@ -1,0 +1,22 @@
+:host {
+    footer {
+        background-color: var(--secondary-color);
+        padding: 28px;
+    }
+
+    input {
+        width: 100%;
+        font-size: 22px;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+        font-family: 'NeueMontreal';
+        background-color: var(--fourth-color-10);
+        color: var(--fourth-color);
+    }
+
+    button {
+        border: none;
+    }
+}

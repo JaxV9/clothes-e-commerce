@@ -1,12 +1,12 @@
 import { Component, effect, signal } from '@angular/core';
 import { Clothe } from '../../../models/models';
 import { ClothesService } from '../../services/clothes.service';
-import { ButtonLinkComponent } from '../ui/buttons/button-link/button-link.component';
+import { ButtonComponent } from '../ui/buttons/button/button.component';
 import { ClotheCardComponent } from '../ui/clothe-card/clothe-card.component';
 
 @Component({
   selector: 'app-clothes-card-list-preview',
-  imports: [ButtonLinkComponent, ClotheCardComponent],
+  imports: [ButtonComponent, ClotheCardComponent],
   templateUrl: './clothes-card-list-preview.component.html',
   styleUrl: './clothes-card-list-preview.component.css',
 })

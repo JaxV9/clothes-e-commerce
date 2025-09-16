@@ -1,22 +1,26 @@
 <app-hero />
 <div class="home-container flex-column gap-28">
-    <div>
-        <app-title class="txt-center" [text]="'Find you style'" [level]="'h2'" />
+    <div class="margin-lr-a w-98">
+        <app-title class="txt-center" [text]="'Trending now'" [level]="'h2'" />
+
         <app-clothes-card-list-preview />
     </div>
 
-    <section class="is-grid promotion-container">
+    <app-title class="txt-center" [text]="'Find your look'" [level]="'h2'" />
+
+    <section class="is-grid promotion-container margin-lr-a w-98">
         <app-promotion-banner [imageLink]="'/clothes/promotionSneakers1.webp'">
             <div class="promotion-banner-content flex-column gap-28 w-full is-absolute">
                 <p>MEN</p>
-                <app-button-link [isMain]="true" text="Explore the collection" />
+                <app-button [isLink]="true" [isMain]="true" text="Explore the collection" />
             </div>
         </app-promotion-banner>
         <app-promotion-banner [imageLink]="'/clothes/promotionSneakers2.webp'">
             <div class="promotion-banner-content flex-column gap-28 w-full is-absolute">
                 <p>WOMEN</p>
-                <app-button-link [isMain]="true" text="Explore the collection" />
+                <app-button [isLink]="true" [isMain]="true" text="Explore the collection" />
             </div>
         </app-promotion-banner>
     </section>
 </div>
+<app-footer />

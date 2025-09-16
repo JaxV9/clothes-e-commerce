@@ -5,8 +5,9 @@
     }
 
     .promotion-container {
-        width: 100%;
+        width: 98%;
         grid-template-columns: 1fr 1fr;
+        border-radius: 8px;
     }
 
     .promotion-banner-content {
