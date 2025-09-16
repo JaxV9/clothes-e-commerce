@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { QuickHttp, ResAction } from '@jaslay/http';
-import { StoreService } from './store.service';
-import { Clothe } from '../../models/models';
+import { Clothe } from '../../../models/models';
+import { StoreService } from '../store-service/store.service';
 
 @Injectable()
 export class ClothesService {

@@ -1,8 +1,8 @@
 import { Component, effect, signal } from '@angular/core';
 import { Clothe } from '../../../models/models';
-import { ClothesService } from '../../services/clothes.service';
 import { ButtonComponent } from '../ui/buttons/button/button.component';
 import { ClotheCardComponent } from '../ui/clothe-card/clothe-card.component';
+import { ClothesService } from '../../services/clothes-service/clothes.service';
 
 @Component({
   selector: 'app-clothes-card-list-preview',

@@ -156,6 +156,10 @@ a {
     position: absolute;
 }
 
+.is-fixed {
+    position: fixed;
+}
+
 .text-12 {
     font-size: 12px;
 }

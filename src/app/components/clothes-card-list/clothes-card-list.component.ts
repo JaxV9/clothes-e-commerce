@@ -1,6 +1,6 @@
 import { Component, effect, OnInit, signal } from '@angular/core';
-import { ClothesService } from '../../services/clothes.service';
 import { Clothe } from '../../../models/models';
+import { ClothesService } from '../../services/clothes-service/clothes.service';
 
 @Component({
   selector: 'app-clothes-card-list',
