@@ -21,7 +21,7 @@ export class ClothesService {
       id: index,
     }));
     console.log(result);
-    this.storeService.addItemToStore('clothes', result);
+    this.storeService.addItem('clothes', result);
   }
 
   getClothes(): Clothe[] {
