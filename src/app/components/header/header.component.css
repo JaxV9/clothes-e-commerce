@@ -20,4 +20,13 @@
         position: relative;
         top: 4px;
     }
+
+    .mat-icon {
+        transition: all ease 0.2s;
+    }
+
+    .mat-icon:hover {
+        scale: 1.2;
+        transform: rotate(-25deg);
+    }
 }
