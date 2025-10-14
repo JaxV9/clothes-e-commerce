@@ -1,7 +1,6 @@
-<div class="container margin-lr-a">
-    @for (clothe of clothes(); track clothe) {
-    <div class="card">
-        <img [src]="clothe.images[0]" />
-    </div>
+<div class="clothes-container w-full">
+    @for (clothe of clothesService.getClothes(); track clothe) {
+    <app-clothe-card [title]="clothe.name" [subTitle]="'Subtitle'" [price]="`${clothe.price.toString()} $`"
+        [imagePath]="clothe.images[1].image" />
     }
 </div>

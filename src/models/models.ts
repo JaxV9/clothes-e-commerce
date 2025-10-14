@@ -1,7 +1,8 @@
 export interface Clothe {
-  title: string;
-  slug: string;
+  name: string;
   price: number;
   description: string;
-  images: string[];
+  images: {
+    image: string;
+  }[];
 }

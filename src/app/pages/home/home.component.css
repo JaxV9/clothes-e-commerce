@@ -8,6 +8,7 @@
         width: 98%;
         grid-template-columns: 1fr 1fr;
         border-radius: 8px;
+        gap: 8px;
     }
 
     .promotion-banner-content {
@@ -21,5 +22,29 @@
         text-align: start;
         font-size: 64px;
         margin: 0;
+        color: var(--fourth-color);
+    }
+
+    app-promotion-banner:first-of-type {
+        position: relative;
+        top: 16px;
+        left: 0;
+        transition: all ease 0.5s;
+    }
+
+    app-promotion-banner:first-of-type:hover {
+        z-index: 5;
+        scale: 1.02;
+    }
+
+    app-promotion-banner:last-child {
+        position: relative;
+        right: 0;
+        transition: all ease 0.5s;
+    }
+
+    app-promotion-banner:last-child:hover {
+        z-index: 5;
+        scale: 1.02;
     }
 }

@@ -1,12 +1,12 @@
 :host {
-    .header-container {
-        width: 100%;
-        border-bottom: 1px solid;
-        border-color: var(--fourth-color-10);
-        padding: 16px 42px;
-        background-color: var(--secondary-color);
-        position: fixed;
+    section {
         z-index: 10;
+        position: fixed;
+        backdrop-filter: blur(1px);
+    }
+
+    .header-container {
+        padding: 16px 0;
     }
 
     .header-right {
@@ -16,17 +16,19 @@
 
     .header-title {
         font-size: 24px;
-        color: var(--third-color);
+        color: var(--secondary-color);
         position: relative;
         top: 4px;
     }
 
     .mat-icon {
         transition: all ease 0.2s;
+        color: var(--secondary-color) !important;
     }
 
     .mat-icon:hover {
         scale: 1.2;
         transform: rotate(-25deg);
+        color: var(--third-color) !important;
     }
 }

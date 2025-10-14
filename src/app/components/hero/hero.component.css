@@ -1,11 +1,19 @@
 :host {
-    .hero {
-        height: calc(100vh - 60px);
+
+    section {
         width: 100%;
-        background-image: url('../../../assets/clothes/hero.png');
+        height: 100vh;
+        display: flex;
+    }
+    
+    .hero {
+        height: 100%;
+        width: 100%;
+        background-image: url('https://abpydbcfmhdslktmddht.supabase.co/storage/v1/object/public/clothes/models/hero.png');
         background-size: cover;
         background-position:top;
         background-repeat: no-repeat;
+        margin: auto;
     }
 
     .filter {
@@ -29,7 +37,7 @@
         margin-bottom: 4%;
         font-size: 170px;
         font-weight: 500;
-        color: var(--fourth-color);
+        color: var(--secondary-color);
     }
 
     .second-word {

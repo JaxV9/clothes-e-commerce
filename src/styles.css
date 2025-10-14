@@ -3,8 +3,8 @@
 @import url('./styles/fonts.css');
 
 body {
-    background-color: #212121;
-    color: #FFF;
+    background-color: var(--fourth-color);
+    color: var(--secondary-color);
     margin: 0;
 }
 

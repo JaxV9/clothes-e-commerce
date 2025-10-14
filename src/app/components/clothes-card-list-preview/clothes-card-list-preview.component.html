@@ -1,9 +1,9 @@
-<div class="container flex-column margin-lr-a gap-16">
+<div class="flex-column margin-lr-a gap-16">
     <app-button class="margin-l-a" [text]="'Show all'" [isLink]="true" />
     <div class="clothes-container flex-row w-full">
         @for (clothe of clothes(); track clothe) {
-        <app-clothe-card [title]="clothe.title" [subTitle]="'Subtitle'" [price]="'70$'"
-        [imagePath]="'/clothes/sneakers-1/sneakers1PNJ1.png'" />
+        <app-clothe-card [title]="clothe.name" [subTitle]="'Subtitle'" [price]="`${clothe.price.toString()} $`"
+        [imagePath]="clothe.images[1].image" />
         }
     </div>
 </div>

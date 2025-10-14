@@ -16,6 +16,5 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.clothesService.loadClothes();
-    console.log(this.clothesService.getClothes());
   }
 }
