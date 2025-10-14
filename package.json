@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "prebuild": "node src/scripts/pre-build.ts",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -21,6 +22,7 @@
     "@angular/router": "^20.2.3",
     "@jaslay/http": "^1.0.7",
     "@primeuix/themes": "^1.2.3",
+    "dotenv": "^17.2.3",
     "primeng": "^20.0.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",

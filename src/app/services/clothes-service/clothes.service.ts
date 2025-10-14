@@ -2,25 +2,23 @@ import { Injectable } from '@angular/core';
 import { QuickHttp, ResAction } from '@jaslay/http';
 import { Clothe } from '../../../models/models';
 import { StoreService } from '../store-service/store.service';
+import { environment } from '../../../environment';
 
 @Injectable()
 export class ClothesService {
-  baseUrl = 'https://api.escuelajs.co/';
+  baseUrl = environment.baseUrl;
   headers = {
     'Content-Type': 'application/json',
   };
   quickHttp = new QuickHttp(this.baseUrl, this.headers, 'omit');
 
   async loadClothes() {
-    const response: ResAction = await this.quickHttp.get(
-      'api/v1/products/?categorySlug=clothes'
-    );
+    const response: ResAction = await this.quickHttp.get('clothes/');
     const payload = response.payload as Clothe[];
     const result = Array.from({ length: 12 }, (_, index) => ({
-      ...payload[4],
+      ...payload[index % 2 === 0 ? 1 : 0],
       id: index,
     }));
-    console.log(result);
     this.storeService.addItem('clothes', result);
   }
 
