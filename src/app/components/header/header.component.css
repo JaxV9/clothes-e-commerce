@@ -2,11 +2,14 @@
     section {
         z-index: 10;
         position: fixed;
-        backdrop-filter: blur(1px);
+        top: 0;
+        background: var(--blur-color);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(28px);
     }
 
     .header-container {
-        padding: 16px 0;
+        padding: 8px 0;
     }
 
     .header-right {
@@ -15,7 +18,7 @@
     }
 
     .header-title {
-        font-size: 24px;
+        font-size: 22px;
         color: var(--secondary-color);
         position: relative;
         top: 4px;
@@ -24,6 +27,7 @@
     .mat-icon {
         transition: all ease 0.2s;
         color: var(--secondary-color) !important;
+        font-size: 22px;
     }
 
     .mat-icon:hover {
