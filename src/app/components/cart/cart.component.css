@@ -4,18 +4,17 @@
         height: 90vh;
         z-index: 999;
         transition: all ease 0.2s;
-        background: var(--blur-color);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-        backdrop-filter: blur(28px);
+    }
+
+    .display, .hide {
+        top: 64px;
     }
 
     .display {
-        top: 70px;
         right: 16px;
     }
 
     .hide {
-        top: 70px;
         right: -500px;
     }
 }

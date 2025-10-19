@@ -1,5 +1,5 @@
 <div class="flex-column margin-lr-a gap-16">
-    <app-button class="margin-l-a" [text]="'Show all'" [isLink]="true" />
+    <app-button class="margin-l-a" [text]="'Show all'" [isLink]="true" [path]="'clothes'" />
     <div class="clothes-container flex-row w-full">
         @for (clothe of clothes(); track clothe) {
         <app-clothe-card [title]="clothe.name" [subTitle]="'Subtitle'" [price]="`${clothe.price.toString()} $`"

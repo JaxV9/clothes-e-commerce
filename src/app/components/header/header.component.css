@@ -1,11 +1,7 @@
 :host {
     section {
         z-index: 10;
-        position: fixed;
         top: 0;
-        background: var(--blur-color);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-        backdrop-filter: blur(28px);
     }
 
     .header-container {

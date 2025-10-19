@@ -48,3 +48,5 @@ vscode
 .env
 
 environment.ts
+
+fakeData.ts

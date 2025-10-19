@@ -1,13 +1,15 @@
 :host {
 
     .clothes-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        width: fit-content;
-        padding-top: 64px;
-        grid-gap: 16px;
-        justify-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
         margin-left: auto;
+        margin-right: auto;
+        padding-top: 64px;
+        justify-items: center;
+        align-items: center;
+        gap: 16px;
     }
 
     app-clothe-card {
