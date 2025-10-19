@@ -11,6 +11,9 @@ body {
 html,
 body {
     height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 body {
@@ -190,4 +193,10 @@ a {
 
 .w-98 {
     width: 98%;
+}
+
+.css-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

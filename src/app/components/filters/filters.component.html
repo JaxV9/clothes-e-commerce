@@ -1,4 +1,10 @@
-<div class="container is-fixed blur box-shadow">
-    <!-- <img src="/icons/black-filter.svg" /> -->
-    <div class="icon"></div>
+<div
+    [ngClass]="filterIsDisplay() ? 'filter-display blur box-shadow radius-16' : 'filter-hide blur box-shadow radius-16'">
+    <app-back (click)="toggleFilter()" />
+    <ng-content />
 </div>
+@if (!filterIsDisplay()) {
+    <div (click)="toggleFilter()" class="container is-pointer is-fixed blur box-shadow">
+        <div class="icon css-image"></div>
+    </div>
+}
