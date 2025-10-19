@@ -14,9 +14,8 @@ export class ClothesService {
   quickHttp = new QuickHttp(this.baseUrl, this.headers, 'omit');
 
   async loadClothes() {
-    // const response: ResAction = await this.quickHttp.get('clothes/');
-    // const payload = response.payload as Clothe[];
-    const payload = fakeClothes;
+    const response: ResAction = await this.quickHttp.get('clothes/');
+    const payload = response.payload as Clothe[];
     const result = Array.from({ length: 12 }, (_, index) => ({
       ...payload[index % 2 === 0 ? 1 : 0],
       id: index,

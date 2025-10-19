@@ -1,0 +1,23 @@
+:host {
+    .container {
+        width: 64px;
+        height: 64px;
+        bottom: 28px;
+        right: 28px;
+        border-radius: 50%;
+        display: flex;
+        cursor: pointer;
+    }
+
+    .icon {
+        background-image: url('/icons/white-filter.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50%;
+        height: 50%;
+        margin: auto;
+        position: relative;
+        top: 2px;
+    }
+}

@@ -39,3 +39,12 @@
 .fourth-bg-color {
   background-color: var(--fourth-color);
 }
+
+.blur {
+  backdrop-filter: blur(28px);
+  background: var(--blur-color);
+}
+
+.box-shadow {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
