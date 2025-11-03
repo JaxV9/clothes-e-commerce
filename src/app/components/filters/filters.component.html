@@ -1,6 +1,6 @@
 <div
     [ngClass]="filterIsDisplay() ? 'filter-display blur box-shadow radius-16' : 'filter-hide blur box-shadow radius-16'">
-    <app-back (click)="toggleFilter()" />
+    <app-back (click)="toggleFilter()" position="right" />
     <ng-content />
 </div>
 @if (!filterIsDisplay()) {

@@ -4,4 +4,9 @@
         width: 18px;
         height: 18px;
     }
+
+    .right {
+        transform: rotate(180deg);
+        margin-left: auto;
+    }
 }
