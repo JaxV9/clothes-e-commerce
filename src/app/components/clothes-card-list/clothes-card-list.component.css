@@ -2,9 +2,27 @@
 
     .clothes-container {
         display: grid;
-        grid-template-columns: repeat(auto-fill, 250px);
+        grid-template-columns: repeat(5, 1fr);
         width: 100%;
         gap: 16px;
         justify-content: center;
+    }
+
+    @media(max-width: 1000px) {
+        .clothes-container {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    @media(max-width: 700px) {
+        .clothes-container {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media(max-width: 500px) {
+        .clothes-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 }
